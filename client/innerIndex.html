@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A Demon Supernova</title>
+	<style type="text/css">
+		html,body {
+			background-color: #000;
+			color: #fff;
+			font-family: helvetica, arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			font-size: 12pt;
+			overflow-x: hidden;
+			overflow-y: hidden;
+		}
+		
+		#canvas {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			border: 1px solid #555;
+			width:100%;
+			height:100%;
+		}
+		
+		#chat {
+		        position: absolute;
+		        left: 50%;
+		        /*right: 0;*/
+		        top: 90%;
+		        /*bottom: 0;*/
+		        margin: auto;
+		        /*border: 1px solid red;*/
+		}
+		#input {
+		        display: none;
+		        position: relative;
+		        left: -50%;
+		        width: 350px;
+		        font-family: Metal Mania;
+		        font-weight: bold;
+		        font-size: 25px;
+		        background-image: url('media/chat-bubble-fill.png');
+		        opacity: 0.80;
+		}
+		
+		.say {
+		        color: white;
+		}
+		
+		.tell {
+		        color: #FFA6FF;
+		}
+		
+		.announce {
+		        color: #F8F886;
+		}
+		
+		.error {
+		        color: #FF84A2;
+		}
+		
+		.info {
+		        color: #FFC0C0;
+		}
+	</style>
+	<!-- <link href='https://fonts.googleapis.com/css?family=Metal+Mania' rel='stylesheet' type='text/css'> -->
+	<link href='css/metalmania.css' rel='stylesheet' type='text/css'>		
+	<script type="text/javascript" src="lib/impact/impact.js"></script>
+	<script type="text/javascript" src="lib/game/main.js"></script>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js" ></script>
+	<script type="text/javascript" src="js/socket.io.min.js"></script>
+	
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+		<div id="chat">
+		  <div>
+			   <input type="text" id="input" autocomplete="off">
+		  </div>
+		</div>
+</body>
+</html>

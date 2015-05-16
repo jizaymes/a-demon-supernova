@@ -1,0 +1,19 @@
+A Demon Supernova
+
+Network enabled RPG Game built with ImpactJS. I've run out of time/interest to pursue this but it is a great starting point for someone looking to learn how to develop a game like this. It has a NodeJS server that interacts with a database, and had facebook integration, until they recently changed over their graph api format...Haven't made it work with that, so its disabled right now.
+
+You must do the following to get this to work:
+
+a) Have NodeJS set up and SocketIO and MySQL modules for it
+b) Set up a Mysql database connection and create a table for players. Example table is included at players.sql
+c) The service uses SSL so you will need an SSL certificate to exist in the root as ssl.key and ssl.crt. Modify server.js to use a different file name, etc.
+d) Modify the client to know where the server is, in client/lib/game/main.js
+e) If you use a different user ID than the one thats basically hardcoded in right now, you'll need to update that in client/lib/game/main.js as well.
+f) Bring your own licensed version of ImpactJS to put in client/lib/impact
+
+
+To get it going, once all of these prerequisites have been set up, start the server
+
+nodejs server.js
+
+Then visit https://your-IP, and accept the SSL warning.
