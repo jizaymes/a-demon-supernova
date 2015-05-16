@@ -4,8 +4,8 @@ Network enabled RPG Game built with ImpactJS. I've run out of time/interest to p
 
 You must do the following to get this to work:
 
-a) Have NodeJS set up and SocketIO and MySQL modules for it
-b) Set up a Mysql database connection and create a table for players. Example table is included at players.sql
+a) Have NodeJS set up and SocketIO and MySQL modules for it. These are included in the node_modules folder
+b) Set up a Mysql database connection and create a table for players. Example table is included at ads.sql
 c) The service uses SSL so you will need an SSL certificate to exist in the root as ssl.key and ssl.crt. Modify server.js to use a different file name, etc.
 d) Modify the client to know where the server is, in client/lib/game/main.js
 e) If you use a different user ID than the one thats basically hardcoded in right now, you'll need to update that in client/lib/game/main.js as well.
